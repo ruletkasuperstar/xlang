@@ -1,0 +1,41 @@
+/* this is multi-comment */
+// this is one line comment
+
+// variable
+int16 now = 0;
+
+// constant
+const char[12] name = "Alex";
+
+// function
+int16 add(const int16, const int16) {
+    return __args__[0] + __args__[1];
+}
+
+// classes
+class First {
+    public char[inf] name = "first"; // inf statement indicates that the variable will dynamically change its size
+    
+    public char[inf] getName() {
+        return context->name;
+    }
+}
+
+// namespaces
+namespace Standard {
+    /* code */
+    /*
+        in order for a member of the namespace to be accessible from me, I need to add the operator ::
+        and the name of the namespace to it, the rest of the members will be written as local.
+    */
+    
+    // locaL
+    bool status = false;
+    
+    // global
+    bool Standard::status = false;
+}
+
+/* if-statement and cycles such as in C/C++ */
+
+// At now it's all
