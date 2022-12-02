@@ -1,0 +1,16 @@
+123; // will be ignored
+
+"hello, XLANG"; // will be ignored
+
+uint8 firstTest = 10;
+uint8 secondTest = 20 + firstTest;
+::Any thirdTest = secondTest;
+::swipe(thirdTest, firstTest); // swipe value (standard library)
+
+bool state = true;
+char firstString = 'a';
+char[inf] secondString = "too long"; inf indicates that is string-litteral
+
+::swipe(secondString, firstString); // [Type Error] -> Can't swipe <string> to <char>
+
+__NULL__ thisIsNull; // standard macros
