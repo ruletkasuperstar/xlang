@@ -13,7 +13,7 @@
  * _operator_ - +, - /, =
  * _open_bracket_ - {, [, (
  * _close_bracket_ - }, ], )
- */cmd
+ */
 
 #define __tokens_count__ 7
 
